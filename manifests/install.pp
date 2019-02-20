@@ -7,3 +7,4 @@ class nginx::install (
     name   => $package_name,
   }
 }
+#teste
