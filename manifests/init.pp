@@ -19,9 +19,8 @@ class nginx(
   Boolean $service_hasrestart          = $::nginx::params::service_hasrestart,
   String $docroot                      = $::nginx::params::docroot,
 ) inherits ::nginx::params {
-  # class { '::nginx::install': }
-
-  # -> class { '::nginx::config': }
-  # ~> class { '::nginx::service': }
+  class { '::nginx::install': }
+  -> class { '::nginx::config': }
+  ~> class { '::nginx::service': }
 
 }
