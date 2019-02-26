@@ -1,5 +1,5 @@
 class nginx::service (
-  String $ensure = $::nginx::config_name,
+  String $ensure = $::nginx::service_ensure,
   String $service_name = $::nginx::service_name,
   String $pattern = $::nginx::service_pattern,
   Boolean $enable = $::nginx::service_enable,
