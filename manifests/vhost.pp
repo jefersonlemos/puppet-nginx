@@ -1,5 +1,5 @@
 define nginx::vhost (
-  Integer $port                        = 80,
+  #Integer $port                        = 80,
   String $priority                     = '50',
   String $server_aliases               = '',
   Boolean $enable                      = true,
